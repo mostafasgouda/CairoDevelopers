@@ -37,33 +37,3 @@ require_once 'dbconnect.php';
     </div><!-- /container -->
     </body>    
 </html>
-
-
-
-
-
-
-
-
-
-
-
-    
-  //    mysqli_stmt_execute($sql);
-    
-    //   mysqli_query($conn,"INSERT INTO loanprofiles (name, email, password, mobile, projecttype, projectname, projectlocation, loanamount, duration, usercomments) VALUES ('$_POST[name]', '$_POST[email]','$_POST[password]','$_POST[mobile]', '$_POST[projecttype]', '$_POST[projectname]', '$_POST[projectlocation]', '$_POST[loanamount]', '$_POST[duration]', '$_POST[usercomments]' )");
-             //mysql_close($conn);
-
-
-
-
-//Connecting to sql db.
-
-//Sending form data to sql db.
-
-
-
-
-
-
-
