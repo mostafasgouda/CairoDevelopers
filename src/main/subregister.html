@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="../../CSS/min.css" />
+</head>
+        <body>
+    <div class="container">
+    <h1 class="welcome text-center">Easy Loans</h1>
+          <div class="card card-container">
+        <h2 class='login_title text-center'>Start Your Registeration</h2>
+        <hr>
+
+            <form class="form-signin" method="post" action=loan.php >
+                <span id="reauth-email" class="reauth-email"></span>
+                <p class="input_title">UserName</p>
+                <input name="name" type="text" id="UserName" class="login_box" placeholder="Enter your Full Name" required autofocus>
+               
+                <p class="input_title">Email</p>
+                <input name="email" type="text" id="inputEmail" class="login_box" placeholder="user@cairodevelopers.com" required autofocus>
+                
+                <p class="input_title">Password</p>
+                <input name="password" type="password" id="inputPassword" class="login_box" placeholder="******" required>
+                
+                <p class="input_title">Mobile Number</p>
+                <input name="mobile" type="text" id="inputEmail" class="login_box" placeholder="01x xxxxxxxx" required autofocus>
+                
+                <p class="input_title">Project</p>
+                <input name="projecttype" type="text" id="ProjectType" class="login_box" placeholder="Enter your Project Type" required autofocus>
+                
+                <input name="projectname" type="text" id="ProjectName" class="login_box" placeholder="Enter your Project Name" required autofocus>
+                
+                <input name="projectlocation" type="text" id="ProjectLocation" class="login_box" placeholder="Enter your Project Location" required autofocus>
+                
+                <p class="input_title">Loan</p>
+                <input name="loanamount" type="Number" id="LoanAmount" class="login_box" placeholder="How much do you need?" required autofocus>
+                
+                <input name="duration" type="Number" id="LoanDuration" class="login_box" placeholder="Duration liability? Months" required autofocus>
+                
+                <p class="input_title">Add Your Comment Here</p>
+                <input name="usercomment" type="text" class="login_box" placeholder="Comment" required autofocus>
+                
+                <p class="input_title">Attach Your Docs As one PDF File</p>
+                            
+                                
+                <input type="file" name="pic" accept="image/*">
+                 <span id="reauth-email" class="reauth-email"></span>
+                <div id="remember" class="checkbox">
+                    <label>
+                        
+                    </label>
+                </div>
+                <button name="login" id="register" class="btn btn-lg btn-primary" type="submit" value="submit">Register</button>
+            </form><!-- /form -->
+        </div>
+
+    </div><!-- /container -->
+    </body>    
+</html>
