@@ -9,7 +9,7 @@
 </head>
         <body>
     <div class="container">
-    <h1 class="welcome text-center">Bank Application<br> Easy Loans </h1>
+    <h1 class="welcome text-center">Bank Application<br> Express Loan </h1>
         <div class="card card-container">
         <h2 class='login_title text-center'>Login</h2>
         <hr>

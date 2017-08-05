@@ -22,11 +22,12 @@ require_once 'dbconnect.php';
     $statement = $conn->prepare($sql);
 
     $statement->execute();
+    
 
 ?>
 <body>
     <div class="container">
-    <h1 class="welcome text-center">Bank Application<br> Easy Loans </h1>
+    <h1 class="welcome text-center">Bank Application<br> Express Loan </h1>
         <div class="card card-container">
         <h2 class='login_title text-center'>Welcome <?php echo $name1; ?></h2>
         <a name="login" id="register" href=../../index.php>Continue to login in</a>
@@ -49,17 +50,6 @@ require_once 'dbconnect.php';
 
 
     
-  //    mysqli_stmt_execute($sql);
-    
-    //   mysqli_query($conn,"INSERT INTO loanprofiles (name, email, password, mobile, projecttype, projectname, projectlocation, loanamount, duration, usercomments) VALUES ('$_POST[name]', '$_POST[email]','$_POST[password]','$_POST[mobile]', '$_POST[projecttype]', '$_POST[projectname]', '$_POST[projectlocation]', '$_POST[loanamount]', '$_POST[duration]', '$_POST[usercomments]' )");
-             //mysql_close($conn);
-
-
-
-
-//Connecting to sql db.
-
-//Sending form data to sql db.
 
 
 
