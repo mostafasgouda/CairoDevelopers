@@ -21,6 +21,14 @@ require_once 'dbconnect.php';
 //}
 
 
+
+          
+        
+
+
+
+
+
 $result = $conn->query("SELECT COUNT(*) FROM `loans` WHERE `profiledone`=0");
 $row = $result->fetch_row();
 $rowsnumber=$row[0];
@@ -41,7 +49,7 @@ $rowsnumber=$row[0];
         <h2 class='login_title text-center'>Admin Area</h2>
         <a name="logout" id="login" href=../../index.php>logout</a>
         <hr>
-            <form class="form-signin" action=AdminArea.php method="post">
+            <form class="form-signin" action="process.php" method="post">
             <table class='admintable'>
                  <tr>
                  <th align="center">ID</th>
@@ -72,7 +80,7 @@ $rowsnumber=$row[0];
 
                     while($row = mysqli_fetch_array($result))
                     {
-                    
+                    $id =$row['ids'];
                     echo "<tr><td>"; 
                     echo $row['ids'];
                     echo "</td><td>";   
@@ -100,7 +108,9 @@ $rowsnumber=$row[0];
                             echo "Project Viewed " ;
                         }else{
                             echo "Not yet" ;
-                            echo "<input type='submit' name='action' data-value= value='profileseen' />";
+                            echo $id;
+                            echo "<input type='submit' name='submit' value='profileseen'  />";
+                            echo "<input type='hidden' name='idprofileseen' value='$id'   />";
                         }
                     
                     echo "</td><td>";
@@ -108,13 +118,18 @@ $rowsnumber=$row[0];
                             echo "Project Accepted " ;
                         }else{
                             echo "Not yet" ;
-                            echo "<input type='submit'' name='action' value='profileacceptance' />";
+                           
+                            echo $id;
+                            echo "<input type='submit'' name='submit' value='profileacceptance' />";
+                            echo "<input type='hidden' name='idprofileacceptance' value='$id'   />";
                         }
                     
                     echo "</td><td>";  
                          if ($row['profiledone']!=1){
                            echo "Not yet" ;
-                            echo "<input type='submit'' name='action' value='profiledone' />";
+                             echo $id;
+                            echo "<input type='submit'' name='submit' value='profiledone'  />";
+                            echo "<input type='hidden' name='idprofiledone' value='$id'   />";
                         }
                     
                     

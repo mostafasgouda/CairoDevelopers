@@ -38,22 +38,3 @@ require_once 'dbconnect.php';
     </div><!-- /container -->
     </body>    
 </html>
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-

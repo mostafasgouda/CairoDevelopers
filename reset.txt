@@ -1,0 +1,3 @@
+UPDATE loans SET profileseen= 0;
+UPDATE loans SET profileacceptance= 0 ;
+UPDATE loans SET profiledone= 0
